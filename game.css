@@ -1,0 +1,70 @@
+main{
+    align-items: center;
+    background: url(../img/bg-adventures-time.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px 20px 50px;
+    width: 100%;
+}
+
+header{
+    align-items: center;
+    background: rgba(255,255,255, 0.8);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-width: 800px;
+    padding: 30px;
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+.card{
+    aspect-ratio: 3/4;
+    background: lightcoral;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+
+.face{
+    border: 3px solid lightcoral;
+    border-radius: 5px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: all 400ms ease;
+}
+.front{ 
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+.back{
+    background: url(../img/9308773_orig.gif);
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+}
+
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+.desabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
+}
