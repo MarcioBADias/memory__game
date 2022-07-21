@@ -11,7 +11,9 @@
     justify-content: center;
 }
 .login__imagem{
-    height: 150px;
+    border-radius: 20px;
+    height: 270px;
+    width: 480px;
 }
 .login__header h1{
     color: #333;
